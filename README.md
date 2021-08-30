@@ -1,7 +1,5 @@
 # Aavegotchi auto petter
 
-I'm just solving ethernaut challenges
-
 1. Clone respository
 2. Create .env file and put PRIVATE_KEY=put_key_here (NO QUOTES)
 3. npm install hardhat

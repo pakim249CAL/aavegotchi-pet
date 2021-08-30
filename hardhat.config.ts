@@ -18,10 +18,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 export default {
-  defaultNetwork: "rinkeby",
+  defaultNetwork: "polygon",
   networks: {
-    rinkeby: {
-      url: "https://eth-rinkeby.alchemyapi.io/v2/6adOn8fQFLYEk7XrpUHgQ2gaBGiB3Sv7",
+    polygon: {
+      url: process.env.ALCHEMY_API,
       accounts: [process.env.PRIVATE_KEY],
       gas: 6500000,
       gasLimit: 1000000,
@@ -34,7 +34,7 @@ export default {
         version: "0.6.0",
       },
       {
-        version: "0.8.0",
+        version: "0.8.1",
         settings: {},
       },
     ],

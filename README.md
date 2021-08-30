@@ -1,7 +1,7 @@
 # Aavegotchi auto petter
 
 1. Clone respository
-2. Create .env file according to env_example
+2. Create .env file according to env_example. Get the tx data from "Pet All" and use that for TX_DATA field.
 3. Run the following commands:
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash #Install nvm

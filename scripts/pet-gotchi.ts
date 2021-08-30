@@ -8,7 +8,7 @@ const GWEI = 1000000000n
 const HOUR = 1000 * 60 * 60;
 
 // Set initial delay and stagger in hours
-const initialDelay = 1
+const initialDelay = 0.02
 const stagger = 0.1
 
 function delay(ms: number) {
@@ -23,7 +23,8 @@ async function main() {
   while(true) {
     const tx = await owner.sendTransaction({to: gameAddress, data: process.env.TX_DATA, gasPrice: 50n * GWEI, gasLimit: 60000});
     console.log(tx.hash);
-    console.log("Going to sleep for 12.2 hours");
+    console.log("Going to sleep for 12 hours");
+
     await delay(HOUR * 12 + stagger);
   }
 

@@ -1,4 +1,6 @@
-# Aavegotchi auto petter
+# Aavegotchi Auto Petter
+
+Run pet-gotchi.ts to run a script that pets your gotchi every 12.2 hours.
 
 1. Clone respository
 2. Create .env file according to env_example. Get the tx data from "Pet All" and use that for TX_DATA field.
@@ -14,4 +16,4 @@ nvm install 16 #This installs node v16
 
 npm install hardhat #Install hardhat
 
-4. To run any scripts, use npx hardhat run scripts/script.js
+4. To run any scripts, use npx hardhat run scripts/script.ts

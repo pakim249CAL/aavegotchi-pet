@@ -1,6 +1,6 @@
 # Aavegotchi Auto Petter
 
-Run pet-gotchi.ts to run a script that pets your gotchi every 12.2 hours.
+Run pet-gotchi.ts to run a script that pets your gotchi every 12.1 hours.
 
 1. Clone respository
 2. Create .env file according to env_example. Get the tx data from "Pet All" and use that for TX_DATA field.

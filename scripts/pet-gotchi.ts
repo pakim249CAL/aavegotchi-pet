@@ -1,8 +1,5 @@
 import "@nomiclabs/hardhat-waffle";
 import {ethers} from "hardhat";
-import utils from "web3-utils";
-import hre from "hardhat";
-import { stringify } from "querystring";
 
 const gameAddress = "0x86935F11C86623deC8a25696E1C19a8659CbF95d";
 const GWEI = 1000000000n;
@@ -26,7 +23,11 @@ async function main() {
     const tx = await owner.sendTransaction({to: gameAddress, data: process.env.TX_DATA, gasPrice: 50n * GWEI, gasLimit: 150000});
     console.log(tx.hash);
     console.log("Going to sleep for 12 hours");
-    await delay(HOUR * (12 + stagger));
+    for(let i = 0; i < 12; i++) {
+      await delay(HOUR);
+      console.log("Hour passed");
+    }
+    await delay(HOUR * stagger);
   }
 
 }
